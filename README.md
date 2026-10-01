@@ -22,55 +22,54 @@ O objetivo não é decorar definições, e sim demonstrar que você entende os c
 ### Questão 1 — O que é um "agent"?
 O que é um "agent" (agente de IA)? Explique com suas próprias palavras e dê um exemplo de situação em que faz mais sentido usar um agente do que um chat comum.
 
-**Sua resposta:**
+**Sua resposta:** agente é uma IA que executa ações (lê arquivos, roda comandos) e itera sozinha, e não só responde.
 
 
 ### Questão 2 — O que são guidelines?
 O que são "guidelines" (diretrizes) ao usar uma IA generativa? Qual é o papel delas na qualidade das respostas geradas pelo modelo?
 
-**Sua resposta:**
+**Sua resposta:** guidelines são instruções persistentes que orientam o comportamento e a qualidade das respostas.
 
 
 ### Questão 4 — Escolha de modelo e nível de esforço
 Qual modelo de IA utilizar para cada tipo de tarefa? Dê um exemplo de tarefa simples e outra mais complexa, explicando como você escolheria o modelo em cada caso. O que é o "nível de esforço" (effort level) e quando faz sentido aumentá-lo ou diminuí-lo?
 
-**Sua resposta:**
+**Sua resposta:** modelo leve para tarefas simples, modelo mais forte para as complexas. esforço alto para raciocínio difícil, baixo para o basico.
 
 
 ### Questão 5 — Como estruturar um bom prompt
 Descreva os elementos que tornam um prompt mais eficaz (ex.: contexto, objetivo, formato esperado, exemplos, restrições).
 
-**Sua resposta:**
+**Sua resposta:** Um prompt eficaz tem contexto (sobre o que é o projeto), objetivo claro (o que eu quero), formato esperado (lista, tabela, código), exemplos do resultado desejado e restrições (o que não fazer). Quanto mais desses elementos, menos a IA precisa adivinhar.
 
 
 ### Questão 6 — Iteração de prompt
 O que significa "iterar" um prompt? Por que a primeira resposta de uma IA geralmente não é a versão final, e como você usaria a resposta recebida para melhorar o próximo prompt?
 
-**Sua resposta:**
+**Sua resposta:** Iterar é refinar o prompt em ciclos: mando um pedido, avalio a resposta e ajusto o próximo prompt com base no que veio errado ou faltando. A primeira resposta quase nunca é a final porque meu pedido inicial costuma ser vago. Eu uso o que a IA devolveu para ver o que faltou explicar e então acrescento contexto, restrições ou um exemplo no pedido seguinte.
 
 
 ### Questão 7 — Zero-shot vs. few-shot
 Qual é a diferença entre um prompt "zero-shot" e um prompt "few-shot"? Dê um exemplo de situação em que vale a pena incluir exemplos dentro do próprio prompt.
 
-**Sua resposta:**
+**Sua resposta:** Zero-shot é pedir algo sem dar nenhum exemplo; few-shot é incluir no prompt um ou mais exemplos do resultado esperado. Vale a pena usar exemplos quando preciso de um formato específico, como pedir que a IA escreva mensagens de commit sempre no mesmo padrão: mostro 2 ou 3 mensagens boas e ela repete o estilo.
 
 
 ### Questão 8 — Memória e contexto entre sessões
 O que significa uma IA "ter memória" entre sessões diferentes de conversa? Por que, em um projeto longo como o TCC, é importante decidir o que precisa ser "lembrado" e como fornecer esse contexto para a IA a cada nova conversa?
 
-**Sua resposta:**
+**Sua resposta:** Ter memória entre sessões significa a IA lembrar do que foi conversado antes. Sem isso, cada conversa nova começa do zero. Num projeto longo como o TCC, preciso decidir o que é essencial lembrar (tecnologias, decisões, padrões) e fornecer isso a cada sessão, por exemplo num arquivo como o CLAUDE.md. Assim a IA não sugere algo que contradiz o que já foi decidido.
 
 
 ### Questão 9 — Avaliar a resposta da IA
 Antes de aplicar a sugestão de uma IA no seu projeto, como você verifica se ela está correta? Descreva pelo menos 2 formas práticas de checar a confiabilidade de uma resposta gerada por IA.
 
-**Sua resposta:**
-
+**Sua resposta:** Antes de aplicar uma sugestão, primeiro eu rodo e testo o código para ver se funciona de verdade. Segundo, confiro na documentação oficial (por exemplo, a da Microsoft para C#) se o que a IA disse existe e está correto. Também posso comparar com outra fonte ou perguntar de novo pedindo a justificativa.
 
 ### Questão 10 — Dividir tarefas complexas em etapas
 Por que, em tarefas mais complexas, pode ser melhor dividir o trabalho em um fluxo de etapas (ex.: primeiro classificar/organizar, depois processar, depois revisar) em vez de pedir tudo em um único prompt? Dê um exemplo aplicado a uma tarefa do seu TCC.
 
-**Sua resposta:**
+**Sua resposta:** Tarefas complexas ficam melhores em etapas porque cada passo é mais simples, mais fácil de conferir e erros não se acumulam como num pedido gigante. Exemplo no meu projeto (Syncrow, o sistema de acompanhamento de produção): primeiro peço para a IA listar os requisitos da tela do quadro de tarefas, depois gero o código de cada parte, e por fim peço uma revisão. Assim eu confiro o resultado a cada etapa.
 
 
 > **Questão 3** (como escrever um bom CLAUDE.md) e a **Questão 11** (prática, evidência de uso real da IA) são respondidas nos próprios arquivos `CLAUDE.md` e `EVIDENCIAS.md` — veja a parte prática abaixo.
