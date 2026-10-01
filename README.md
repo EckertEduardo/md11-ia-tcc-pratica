@@ -24,11 +24,19 @@ O que é um "agent" (agente de IA)? Explique com suas próprias palavras e dê u
 
 **Sua resposta:**
 
+É um modelo de linguagem que não apenas responde uma pergunta, mas executa um loop.
+
+Explicação: Ele recebe uma tarefa, decide o que fazer, usa determinadas ferramentas e observa o resultado e repete até concluir a mesma.
+
+Exemplo: Quando você precisa criar um site com HTML semântico, CSS e JavaScript bem estruturado você usa um agent em vez de um chat comum.
+
 
 ### Questão 2 — O que são guidelines?
 O que são "guidelines" (diretrizes) ao usar uma IA generativa? Qual é o papel delas na qualidade das respostas geradas pelo modelo?
 
 **Sua resposta:**
+
+São regras que você dá para a IA e ela tem que seguir as mesmas, elas servem para que você não tenha que sempre repetir as mesmas coisas para a IA e para o agent fazer.
 
 
 ### Questão 4 — Escolha de modelo e nível de esforço
@@ -36,11 +44,19 @@ Qual modelo de IA utilizar para cada tipo de tarefa? Dê um exemplo de tarefa si
 
 **Sua resposta:**
 
+O nível de esforço é quanto você quer utilizar da capacidade da IA, quando você quer fazer um TCC de algo complexo você aumenta e quando é uma pergunta simples de "sim" ou "não" você diminuí.
+
+Tarefa simples: Quero tirar um pequena dúvida de onde posso comprar um determinado produto, remédio ou comida eu uso o "nível de esforço" mais fraco da IA.
+
+Tarefa complexa: Quero fazer um TCC que tem vários requisitos, eu uso um "nível de esforço" maior para a IA me entregar as melhores respostas para eu não passar vergonha por ter algo errado no meu TCC.
+
 
 ### Questão 5 — Como estruturar um bom prompt
 Descreva os elementos que tornam um prompt mais eficaz (ex.: contexto, objetivo, formato esperado, exemplos, restrições).
 
 **Sua resposta:**
+
+Seja bastante detalhista falando os mínimos detalhes para a IA fazer o que você quer.
 
 
 ### Questão 6 — Iteração de prompt
@@ -48,11 +64,21 @@ O que significa "iterar" um prompt? Por que a primeira resposta de uma IA geralm
 
 **Sua resposta:**
 
+Iterar um prompt é refazer um pedido com base no seu pedido anterior, em vez de esperar a IA acertar de primeira.
+
+A primeira resposta da IA nunca será ideal, por isso é sempre bom analisar a resposta que a IA te entregou, passo a passo: Primeiro você compara o prompt que você enviou com a resposta da IA, se a resposta não for o que você pediu altere o prompt e identifique o que a IA fez de errado e reescreva o prompt falando que ela fez de errado.
+
 
 ### Questão 7 — Zero-shot vs. few-shot
 Qual é a diferença entre um prompt "zero-shot" e um prompt "few-shot"? Dê um exemplo de situação em que vale a pena incluir exemplos dentro do próprio prompt.
 
 **Sua resposta:**
+
+Zero-Shot: Você pede uma tarefa para a IA, sem dar nenhum exemplo de como terá que ser a resposta final, a IA usa apenas o que ela já "sabe" para fazer o formato.
+
+Few-Shot: Você pede uma tarefa para a IA, dando exemplos dentro do prompt de como deve ser o formato do resultado, para a IA seguir os mesmo padrão que foi pedido no prompt.
+
+Exemplo: Quando a resposta que você quer é específica e difícil de descrever só com regras, se você quer que a IA gere alguns testes seguindo um padrão exato de nomenclatura e estrutura que sua equipe usa, fica mais fácil mostrar 2 exemplos reais padrão do que tentar explicar todas as regras em texto.
 
 
 ### Questão 8 — Memória e contexto entre sessões
@@ -60,17 +86,27 @@ O que significa uma IA "ter memória" entre sessões diferentes de conversa? Por
 
 **Sua resposta:**
 
+Significa que ela armazena as conversas para no "futuro" sem você ter que reexplicar tudo para ela novamente, sem isso toda nova conversa começa sem ela saber os detalhes, se você pedir algo para a IA tipo "Você lembra o nome do meu Projeto e qual linguagem estou usando?", com isso ela procura na memória até achar, se ela não achar ela irá te responder dizendo que não achou em nenhuma conversa anterior.
+
+Porque é importante para o TCC: É importante em um projeto bem longo como o TCC, porque o projeto vai mudando conforme o tempo vai passando, como as tecnologias escolhidas, as decisões de arquitetura, nomes das entidades e ter que sempre em toda nova conversa explicar isso novamente é uma grande perda de tempo e você pode acabar esquecendo algum detalhe importante, por isso vale a pena pedir para a IA armazenar determinadas partes de alguns chats ao longo do tempo.
+
 
 ### Questão 9 — Avaliar a resposta da IA
 Antes de aplicar a sugestão de uma IA no seu projeto, como você verifica se ela está correta? Descreva pelo menos 2 formas práticas de checar a confiabilidade de uma resposta gerada por IA.
 
 **Sua resposta:**
 
+Pedir uma segunda análise para a IA, com um "nível de esforço" maior ou pedindo para um agente analisar, pedir para a mesma IA reanalisar a resposta com um "nível maior de esforço/atenção", ou levar a resposta para outra IA revisar, ajuda a encontrar erros facilmente que passaram despercebidos na primeira resposta.
+
 
 ### Questão 10 — Dividir tarefas complexas em etapas
 Por que, em tarefas mais complexas, pode ser melhor dividir o trabalho em um fluxo de etapas (ex.: primeiro classificar/organizar, depois processar, depois revisar) em vez de pedir tudo em um único prompt? Dê um exemplo aplicado a uma tarefa do seu TCC.
 
 **Sua resposta:**
+
+É importante dividir tarefas complexas em etapas para não sobrecarregar a IA para ela não acabar te entregando respostas indesejadas/erradas ou faltando alguma coisa. Isso acontece quando você pede tudo de uma vez, os erros são gerados com mais facilidade e podem se acumular: se alguma etapa inicial(Domain) sai errada, tudo o que foi construído em cima dela sai errado também.
+
+Exemplo: Quando eu estava fazendo os controllers, pedi um por um para não acabar sobrecarregando a IA com muita coisa, porque se ela me mandasse um controller errado eu corrigia ele sozinho sem comprometer os outros ou sem que a IA misturasse tudo apenas em um.
 
 
 > **Questão 3** (como escrever um bom CLAUDE.md) e a **Questão 11** (prática, evidência de uso real da IA) são respondidas nos próprios arquivos `CLAUDE.md` e `EVIDENCIAS.md` — veja a parte prática abaixo.
